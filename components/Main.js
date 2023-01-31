@@ -4,8 +4,11 @@ const Main = () => {
     <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-6 py-5  ">
         {/* mainDiv 1 */}
         <div className="md:w-2/3">
-            <div>
+            <div className="hidden md:flex">
                 <img src="./images/image-web-3-desktop.jpg" alt="" />
+            </div>
+            <div className="md:hidden">
+                <img src="./images/image-web-3-mobile.jpg" alt="" />
             </div>
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-3 py-5">
                 <h2 className="md:w-1/2 text-3xl md:text-6xl font-bold">
@@ -15,7 +18,7 @@ const Main = () => {
                     <div className="font-medium md:text-lg mb-4">
                     We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise? 
                     </div>
-                    <p className="py-1 md:py-2 px-2 md:px-5 bg-red-400 text-white inline-block uppercase cursor-pointer hover:bg-slate-900 transition duration-150 ease-linear">
+                    <p className="py-1 md:py-2 px-2 md:px-5 bg-red-500 text-white inline-block uppercase cursor-pointer hover:bg-slate-900 transition duration-150 ease-linear">
                         read more
                     </p>
                 </div>
